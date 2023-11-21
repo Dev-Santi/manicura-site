@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { poppins } from "@/fonts";
-import Phone from "@/Components/Phone/Phone";
+//import Phone from "@/components/Phone/Phone";
 
 export const metadata: Metadata = {
   title: "Belleza en Cada Detalle",
@@ -13,9 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='es'>
       <body className={poppins.className + " bg-background h-screen flex justify-center items-center"}>
-        <div>
-          <Phone>{children}</Phone>
-        </div>
+        <div>{children}</div>
       </body>
     </html>
   );
