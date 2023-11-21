@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { poppins } from "@/fonts";
-import Phone from "@/components/Phone/Phone";
+import Phone from "../components/Phone/Phone";
 
 export const metadata: Metadata = {
   title: "Belleza en Cada Detalle",
