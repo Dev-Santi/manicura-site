@@ -2,7 +2,7 @@ import Link from "next/link";
 import { dancingScript } from "@/fonts";
 import { BsInstagram, BsWhatsapp, BsSuitHeartFill } from "react-icons/bs";
 
-export function Navigation() {
+export default function Navigation() {
   return (
     <div className='text-brown-300 flex flex-col items-center gap-5'>
       <div className='relative flex flex-col items-center text-center px-5 pb-3 rounded-xl bg-skin-200 text-brown-300  shadow-xl'>

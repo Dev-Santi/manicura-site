@@ -1,5 +1,5 @@
+import Navigation from "@/components/Phone/Navigation";
 import Timer from "../components/Phone/Timer";
-import { Navigation } from "../components/Phone/Navigation";
 
 export default function Home() {
   return (

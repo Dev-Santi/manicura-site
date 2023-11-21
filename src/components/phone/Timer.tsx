@@ -20,7 +20,7 @@ const months = [
 const days = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"];
 
 export default function Time() {
-  const [time, setTime] = useState(new Date());
+  /*   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -40,5 +40,6 @@ export default function Time() {
         {`${days[time.getDay()]}, ${time.getDate()} de ${months[time.getMonth()]}`}
       </div>
     </div>
-  );
+  ); */
+  return "";
 }
