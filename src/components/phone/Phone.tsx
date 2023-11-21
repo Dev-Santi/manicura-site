@@ -2,7 +2,7 @@ type props = { children: React.ReactNode };
 
 export default function Phone({ children }: props) {
   return (
-    <div className='h-[40rem] w-[20rem] relative flex justify-center items-center bg-black border-[0.30rem] border-gray-100 rounded-[3rem] shadow-[0_10px_10px_2px_rgba(0,0,0,0.4)]'>
+    <div className='max-[335px]:scale-[.70] h-[40rem] w-[20rem] relative flex justify-center items-center bg-black border-[0.30rem] border-gray-100 rounded-[3rem] shadow-[0_10px_10px_2px_rgba(0,0,0,0.4)]'>
       <Head />
       <Buttons />
       <Display>{children}</Display>
@@ -35,9 +35,11 @@ function Buttons() {
 function Display({ children }: props) {
   return (
     <div
-      className={`bg-skin-200 bg-[url('/phone-bg.jpg')] text-white bg-cover bg-center pt-20 px-10 h-[37.5rem] w-[17.5rem] rounded-[2rem]`}
+      className={`bg-skin-200 bg-[url('/phone-bg.jpg')] text-white bg-cover bg-center h-[37.4rem] w-[17.5rem] rounded-[2rem] overflow-hidden`}
     >
-      {children}
+      <div className='w-full h-full pt-20 px-8 transition-all duration-[1000ms] hover:backdrop-blur-[1px]'>
+        {children}
+      </div>
     </div>
   );
 }

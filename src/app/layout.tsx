@@ -1,8 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { poppins } from "@/fonts";
-import Phone from "@/components/phone/Phone";
-import Image from "next/image";
+import Phone from "@/components/Phone";
 
 export const metadata: Metadata = {
   title: "Belleza en Cada Detalle",
@@ -14,15 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='es'>
       <body className={poppins.className + " bg-background h-screen flex justify-center items-center"}>
-        {/*<div>
-          <Image src='/bg-image-2.png' alt='Imagen de decoración, una hoja de color marrón.' width={200} height={200} />
-        </div> */}
         <div>
           <Phone>{children}</Phone>
         </div>
-        {/*<div>
-          <Image src='/bg-image-1.png' alt='Imagen de decoración, lineas marrones que pasan por detras del telefono.' width={200} height={200} />
-        </div> */}
       </body>
     </html>
   );
