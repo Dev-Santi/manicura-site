@@ -14,7 +14,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='es'>
       <body className={poppins.className + " bg-background h-screen flex justify-center items-center"}>
         <div>
-          <Phone>{children}</Phone>
+          Hola
+          {/* <Phone>{children}</Phone> */}
         </div>
       </body>
     </html>
