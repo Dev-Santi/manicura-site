@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='es'>
-      <body className={poppins.className + " bg-background h-screen flex justify-center items-center"}>
+      <body className={poppins.className + " bg-background h-[100svh] flex justify-center items-center"}>
         <div>
           <Phone>{children}</Phone>
         </div>
