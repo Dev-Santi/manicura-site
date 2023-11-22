@@ -19,7 +19,7 @@ const months = [
 
 const days = ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"];
 
-export default function Time() {
+export default function Timer() {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {

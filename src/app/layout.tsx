@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { poppins } from "@/fonts";
 import Phone from "@/components/Phone/Phone";
+import Timer from "@/components/Phone/Timer";
 
 export const metadata: Metadata = {
   title: "Belleza en Cada Detalle",
@@ -12,9 +13,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='es'>
-      <body className={poppins.className + " bg-background h-[100svh] flex justify-center items-center"}>
+      <body className={poppins.className + " " + "bg-purple-300 h-[100svh] flex justify-center items-center"}>
         <div>
-          <Phone>{children}</Phone>
+          <Phone>
+            <Timer />
+            <div className='mt-14'>{children}</div>
+          </Phone>
         </div>
       </body>
     </html>
