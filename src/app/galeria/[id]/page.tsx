@@ -19,8 +19,8 @@ export default function page({ params }: { params: { id: number } }) {
             <h3>-{image.owner}</h3>
           </div>
           <Link
-            href={`https://api.whatsapp.com/send?phone=tu_numero_de_whatsapp&text=Me encantó este diseño! Quisiera consultar el precio y los horarios disponibles. https://manicura-site.vercel.app/galeria/${image.id}`}
-            className={`bg-skin-100 text-brown-300 flex items-center w-[10rem] py-1 justify-center rounded-xl text-[0.8rem] shadow-xl transition-all hover:bg-purple-100 hover:text-white`}
+            href={`https://api.whatsapp.com/send?phone=+59897111899&text=Me encantó este diseño! Quisiera consultar el precio y los horarios disponibles. https://manicura-site.vercel.app/galeria/${image.id}`}
+            className={`bg-skin-100 text-brown-300 flex items-center w-[10rem] py-1 justify-center rounded-xl text-[0.8rem] shadow-xl transition-all hover:bg-purple-100 hover:text-white drop-shadow-3xl`}
           >
             Lo quiero!
           </Link>
