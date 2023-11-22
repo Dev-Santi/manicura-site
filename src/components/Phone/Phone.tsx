@@ -2,7 +2,7 @@ type props = { children: React.ReactNode };
 
 export default function Phone({ children }: props) {
   return (
-    <div className='max-[335px]:scale-[.70] h-[40rem] w-[20rem] relative flex justify-center items-center bg-black border-[0.30rem] border-gray-100 rounded-[3rem] shadow-[0_10px_10px_2px_rgba(0,0,0,0.4)] overflow-hidden'>
+    <div className='max-[335px]:scale-[.70]  h-[40rem] w-[20rem] relative flex justify-center items-center bg-black border-[0.30rem] border-gray-100 rounded-[3rem] shadow-[0_10px_10px_2px_rgba(0,0,0,0.4)] overflow-hidden'>
       <Head />
       <Buttons />
       <Display>{children}</Display>
@@ -13,7 +13,7 @@ export default function Phone({ children }: props) {
 function Head() {
   return (
     <>
-      <span className='absolute flex justify-center items-center top-0 h-[1.5rem] w-[10rem] bg-black rounded-b-2xl translate-y-[1rem]'>
+      <span className='absolute flex z-10 justify-center items-center top-0 h-[1.5rem] w-[10rem] bg-black rounded-b-2xl translate-y-[1rem]'>
         <span className='block rounded-md w-[3rem] h-[0.4rem] bg-gray-100 translate-y-[-0.25rem]'></span>
         <span className='absolute block rounded-full w-[0.6rem] h-[0.6rem] bg-gray-100 translate-x-[2.5rem] translate-y-[-0.25rem]'></span>
       </span>
@@ -35,9 +35,9 @@ function Buttons() {
 function Display({ children }: props) {
   return (
     <div
-      className={`bg-skin-200 bg-[url('/phone-bg.jpg')] text-white bg-cover bg-center h-[37.4rem] w-[17.5rem] rounded-[2rem] overflow-hidden`}
+      className={` bg-skin-200 bg-[url('/phone-bg.jpg')] text-white bg-cover bg-center h-[37.4rem] w-[17.5rem] rounded-[2rem] overflow-hidden`}
     >
-      <div className='w-full h-full pt-20 px-8 transition-all duration-[1000ms] hover:backdrop-blur-[1px]  overflow-auto overflow-x-hidden'>
+      <div className='w-full h-full pt-20 px-8 transition-all duration-[3000ms] hover:backdrop-brightness-50  overflow-auto overflow-x-hidden hiddenScroll'>
         {children}
       </div>
     </div>

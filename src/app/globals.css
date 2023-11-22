@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.hiddenScroll::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes pulse {
     0% {
         opacity: 0
@@ -25,5 +29,15 @@
 
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes pageAnimLeft {
+    0% {
+        transform: translateX(-20rem)
+    }
+
+    100% {
+        transform: translateX(0)
     }
 }
