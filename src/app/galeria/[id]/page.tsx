@@ -12,7 +12,7 @@ export default function page({ params }: { params: { id: number } }) {
         <BackBtn href='/galeria' />
         <div className='flex flex-col items-center gap-4 mb-10'>
           <div className='bg-skin-100 w-full  rounded-xl px-2 py-2 text-brown-300'>
-            <div className=' border-2 border-skin-200 rounded-xl overflow-hidden mb-6'>
+            <div className='border-2 border-skin-200 rounded-xl overflow-hidden mb-6'>
               <Image src={image.src} alt={image.alt} width={400} height={400} />
             </div>
             <h2 className='italic mb-2'>{`"${image.review}"`}</h2>
