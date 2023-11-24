@@ -37,7 +37,7 @@ function Display({ children }: props) {
     <div
       className={` bg-skin-200 bg-[url('/phone-bg.jpg')] text-white bg-cover bg-center h-[37.4rem] w-[17.5rem] rounded-[2rem] overflow-hidden`}
     >
-      <div className='w-full h-full pt-20 px-8 transition-all duration-[3000ms] hover:backdrop-brightness-50  overflow-auto overflow-x-hidden hiddenScroll'>
+      <div className='w-full h-full pt-20 px-8 overflow-auto overflow-x-hidden hiddenScroll'>
         {children}
       </div>
     </div>
