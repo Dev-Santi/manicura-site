@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={
           poppins.className +
           " " +
-          "bg-gradient-to-r from-purple-100 to-pink-200 h-[100svh] flex justify-center items-center overflow-hidden"
+          "bg-gradient-to-r from-purple-100 to-pink-200 min-h-[100svh] flex justify-center items-center overflow-hidden"
         }
       >
         <Experience
