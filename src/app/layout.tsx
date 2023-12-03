@@ -45,8 +45,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </Phone>
           </div>
 
-          <div className='hidden md:block absolute w-full left-0 bottom-0 mb-2 h-5 bg-brown-200 '></div>
-          <div className='hidden md:block absolute w-full left-0 top-0 mt-5 h-5 bg-brown-200'></div>
+          <div className='hidden md:block absolute w-full left-0 bottom-0 mb-2 h-2 bg-white '></div>
+          <div className='hidden md:block absolute w-full left-0 top-0 mt-5 h-2 bg-white'></div>
 
           <div className='absolute flex items-center justify-center inset-0 border-white md:hidden'>
             <Image src='/bg-image-1.png' alt='' width={1000} height={1000} />
